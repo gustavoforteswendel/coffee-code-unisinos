@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Resumo do Pedido</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body onload="carregarResumo()">
+
+<div class="topo-produto">
+
+<img src="img/logo.png" class="logo-produto">
+
+<button class="botao-voltar" onclick="history.back()">
+Voltar
+</button>
+
+</div>
+
+
+<div class="produto-container">
+
+<h1 class="titulo-opcao">
+Resumo do Pedido
+</h1>
+
+<div id="listaResumo">
+</div>
+
+<h2 id="totalResumo" class="produto-preco">
+</h2>
+
+<button class="botao-adicionar" onclick="confirmarPedido()">
+Confirmar Pedido
+</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Produto</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="carregarProduto()">
+
+<div class="topo-produto">
+
+<img src="img/logo.png" class="logo-produto">
+
+<button class="botao-voltar" onclick="history.back()">
+Voltar
+</button>
+
+</div>
+
+
+<div class="produto-container">
+
+<img id="imgProduto" class="produto-img">
+
+
+<h2 id="nomeProduto" class="produto-nome"></h2>
+
+<h2 id="precoProduto" class="produto-preco"></h2>
+
+
+<h1 class="titulo-opcao">
+Tamanho
+</h1>
+
+<div class="grupo-botoes">
+
+<button onclick="escolherTamanho('Pequeno',this)">
+Pequeno
+</button>
+
+<button onclick="escolherTamanho('Médio',this)">
+Médio
+</button>
+
+<button onclick="escolherTamanho('Grande',this)">
+Grande
+</button>
+
+</div>
+
+
+
+<h1 class="titulo-opcao">
+Leite
+</h1>
+
+<div class="grupo-botoes">
+
+<button onclick="escolherLeite('Integral',this)">
+Integral
+</button>
+
+<button onclick="escolherLeite('Desnatado',this)">
+Desnatado
+</button>
+
+<button onclick="escolherLeite('Vegetal',this)">
+Vegetal
+</button>
+
+</div>
+
+
+<button class="botao-adicionar" onclick="adicionarCarrinho()">
+Adicionar ao carrinho
+</button>
+
+</div>
+
+</body>
+</html>

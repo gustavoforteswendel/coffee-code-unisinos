@@ -1,0 +1,457 @@
+/* ======================================================
+RESET E CONFIGURAÇÕES GLOBAIS
+Define margem, padding e fonte padrão do projeto
+====================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+font-weight: bold;
+}
+
+
+/* ======================================================
+ESTRUTURA BASE DA PÁGINA
+Centraliza o conteúdo e define a cor de fundo
+====================================================== */
+
+body{
+background:#F5E6D3;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+
+/* ======================================================
+LOGO PRINCIPAL
+====================================================== */
+
+.logo{
+width:140px;
+margin-top:20px;
+}
+
+
+/* ======================================================
+TÍTULOS PRINCIPAIS
+====================================================== */
+
+h1{
+color:#6B3E26;
+margin:20px;
+}
+
+
+/* ======================================================
+BOTÕES PADRÃO DO SITE
+====================================================== */
+
+button{
+background:#6B3E26;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.9;
+}
+
+
+/* ======================================================
+HOME
+Imagem e botão da tela inicial
+====================================================== */
+
+.home-img{
+width:350px;
+margin:20px;
+}
+
+.home-btn{
+width:249px;
+height:64px;
+font-size:20px;
+}
+
+
+/* ======================================================
+CARDÁPIO
+Grid que organiza os produtos
+====================================================== */
+
+.cardapio{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+margin-top:40px;
+}
+
+
+/* ======================================================
+CARD DO PRODUTO (cardápio)
+====================================================== */
+
+.card{
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+width:200px;
+}
+
+.card img{
+width:160px;
+height:142px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.card button{
+width:170px;
+height:44px;
+font-size:20px;
+}
+
+
+/* ======================================================
+IMAGEM DO PRODUTO (página do produto)
+====================================================== */
+
+.produto-img{
+width:400px;
+margin:20px;
+}
+
+
+/* ======================================================
+OPÇÕES DE SELEÇÃO (tamanho / leite)
+====================================================== */
+
+.opcoes{
+display:flex;
+gap:20px;
+margin:20px;
+}
+
+.opcoes button{
+width:136px;
+height:54px;
+background:transparent;
+border:2px solid #6B3E26;
+color:#6B3E26;
+}
+
+.opcoes button.ativo{
+background:#6B3E26;
+color:white;
+}
+
+
+/* ======================================================
+BOTÃO ADICIONAR AO CARRINHO
+====================================================== */
+
+.add-btn{
+width:247px;
+height:77px;
+font-size:20px;
+}
+
+
+/* ======================================================
+CARRINHO
+Card do produto dentro do carrinho
+====================================================== */
+
+.carrinho-card{
+background:white;
+padding:20px;
+border-radius:20px;
+display:flex;
+align-items:center;
+gap:20px;
+margin:30px;
+}
+
+.carrinho-card img{
+width:80px;
+height:80px;
+}
+
+
+/* ======================================================
+CONTROLE DE QUANTIDADE
+====================================================== */
+
+.quantidade{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.quantidade button{
+width:30px;
+height:30px;
+}
+
+
+/* ======================================================
+TOTAL DO CARRINHO
+====================================================== */
+
+.total{
+font-size:24px;
+margin:20px;
+}
+
+
+/* ======================================================
+BOTÃO CONFIRMAR PEDIDO
+====================================================== */
+
+.confirm-btn{
+width:243px;
+height:79px;
+font-size:24px;
+}
+
+.confirm-img{
+width:420px;
+margin:30px;
+}
+
+
+/* ======================================================
+TOPO DA PÁGINA DE PRODUTO
+Logo + botão voltar
+====================================================== */
+
+.topo-produto{
+width:100%;
+position:relative;
+margin-top:20px;
+}
+
+.logo-produto{
+position:absolute;
+left:40px;
+width:130px;
+}
+
+.botao-voltar{
+display:block;
+margin:auto;
+width:166px;
+height:45px;
+
+background:#6B3E26;
+color:white;
+
+border:none;
+border-radius:30px;
+
+font-size:16px;
+cursor:pointer;
+}
+
+
+/* ======================================================
+CONTAINER DA PÁGINA DE PRODUTO
+Centraliza o conteúdo da página
+====================================================== */
+
+.produto-container{
+display:flex;
+flex-direction:column;
+align-items:center;
+margin-top:40px;
+}
+
+
+/* ======================================================
+IMAGEM DO PRODUTO
+====================================================== */
+
+.produto-img{
+width:416px;
+height:338px;
+object-fit:cover;
+border-radius:10px;
+}
+
+
+/* ======================================================
+INFORMAÇÕES DO PRODUTO
+Nome e preço
+====================================================== */
+
+.produto-nome{
+font-size:  40px;
+color:#6B3E26;
+margin-top:15px;
+}
+
+.produto-preco{
+font-size:24px;
+margin-bottom:30px;
+color:#6B3E26;
+}
+
+
+/* ======================================================
+TÍTULOS DAS OPÇÕES
+Ex: Tamanho / Leite
+====================================================== */
+
+.titulo-opcao{
+font-size:36px;
+color:#6B3E26;
+margin:25px 0 10px;
+}
+
+
+/* ======================================================
+GRUPO DE BOTÕES (tamanho / leite)
+====================================================== */
+
+.grupo-botoes{
+display:flex;
+gap:20px;
+margin-bottom:20px;
+}
+
+
+/* ======================================================
+BOTÕES DAS OPÇÕES
+====================================================== */
+
+.grupo-botoes button{
+width:160px;
+height:54px;
+
+border-radius:30px;
+border:2px solid #6B3E26;
+
+background:transparent;
+color:#6B3E26;
+
+font-size:24px;
+cursor:pointer;
+}
+
+
+/* ======================================================
+BOTÃO ATIVO (quando selecionado)
+====================================================== */
+
+.grupo-botoes button.ativo{
+background:#6B3E26;
+color:white;
+}
+
+
+/* ======================================================
+BOTÃO ADICIONAR AO CARRINHO (produto)
+====================================================== */
+
+.botao-adicionar{
+width:247px;
+height:77px;
+
+background:#6B3E26;
+color:white;
+
+border:none;
+border-radius:30px;
+
+font-size:20px;
+margin-top:20px;
+
+cursor:pointer;
+}
+/* ======================================================
+RESUMO DO PEDIDO
+Container de cada item listado no resumo
+====================================================== */
+
+.resumo-item{
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+background:white;
+
+width:400px;
+
+padding:15px;
+margin:10px 0;
+
+border-radius:15px;
+
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+
+}
+
+
+/* ======================================================
+INFORMAÇÕES DO PRODUTO NO RESUMO
+Área que contém nome do produto e detalhes
+====================================================== */
+
+.resumo-info{
+
+text-align:left;
+
+}
+
+
+/* ======================================================
+NOME DO PRODUTO
+Texto principal exibido no resumo
+====================================================== */
+
+.resumo-nome{
+
+font-size:20px;
+color:#6B3E26;
+
+}
+
+
+/* ======================================================
+DETALHES DO PRODUTO
+Exibe informações como tamanho e tipo de leite
+====================================================== */
+
+.resumo-detalhe{
+
+font-size:16px;
+color:#6B3E26;
+
+opacity:0.8;
+
+}
+
+
+/* ======================================================
+PREÇO DO PRODUTO
+Valor individual exibido no resumo
+====================================================== */
+
+.resumo-preco{
+
+font-size:18px;
+color:#6B3E26;
+
+}
