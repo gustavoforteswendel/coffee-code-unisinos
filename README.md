@@ -33,22 +33,26 @@ O sistema possui as seguintes funcionalidades:
 
 ---
 
-# 🗂 Estrutura do Projeto
+## 🗂 Estrutura do Projeto
+
+```
 ProjetoWebUnisinos/
 │
-├── index.html # Página inicial
-├── cardapio.html # Lista de cafés
-├── produto.html # Página de produto
-├── carrinho.html # Carrinho de compras
-├── resumo.html # Resumo do pedido
-├── confirmacao.html # Confirmação do pedido
+├── index.html          # Página inicial
+├── cardapio.html       # Lista de cafés
+├── produto.html        # Página do produto
+├── carrinho.html       # Carrinho de compras
+├── resumo.html         # Resumo do pedido
+├── confirmacao.html    # Confirmação do pedido
 │
-├── style.css # Estilos da aplicação
-├── script.js # Lógica JavaScript
+├── style.css           # Estilos da aplicação
+├── script.js           # Lógica JavaScript
 │
-└── img/ # Imagens dos produtos
-├── espresso.jpg
-├── latte.jpg
-├── mocha.jpg
-└── ...
+└── img/                # Imagens do projeto
+    ├── espresso.jpg
+    ├── latte.jpg
+    ├── mocha.jpg
+    ├── cappuccino.jpg
+    └── confirmacao.png
+```
 
