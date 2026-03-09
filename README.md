@@ -51,6 +51,4 @@ ProjetoWebUnisinos/
 ├── latte.jpg
 ├── mocha.jpg
 └── ...
-# 📌 Observação
 
-Este projeto foi desenvolvido com fins educacionais para a disciplina de **Desenvolvimento Web**.
